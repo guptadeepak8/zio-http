@@ -444,7 +444,7 @@ object Server extends ServerPlatformSpecific {
           }.ignoreLogged,
         )
         result <- driver.start.catchAllCause(cause => inFlightRequests.failCause(cause) *> ZIO.refailCause(cause))
-        _      <- inFlightRequests.succeed(result.inFlightRequests)
+        _                <- inFlightRequests.succeed(result.inFlightRequests)
       } yield ServerLive(driver, result.port)
     }
   }
