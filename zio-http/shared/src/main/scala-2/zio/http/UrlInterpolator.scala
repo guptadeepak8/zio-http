@@ -71,7 +71,7 @@ private[http] object UrlInterpolatorMacro {
             }
           }
         val exampleParts = staticParts.zipAll(injectedPartExamples, "", "").flatMap { case (a, b) => List(a, b) }
-        val example      = exampleParts.mkString
+        val example              = exampleParts.mkString
         URL.decode(example) match {
           case Left(error) =>
             c.abort(c.enclosingPosition, s"Invalid URL: ${error.getMessage}")

@@ -205,7 +205,7 @@ private[codec] object EncoderDecoder {
 
         }
       }
-    private val formBoundary                = Boundary("----zio-http-boundary-D4792A5C-93E0-43B5-9A1F-48E38FDE5714")
+    private val formBoundary = Boundary("----zio-http-boundary-D4792A5C-93E0-43B5-9A1F-48E38FDE5714")
     private val indexByName                 = flattened.content.zipWithIndex.map { case (codec, idx) =>
       codec.name.getOrElse("field" + idx.toString) -> idx
     }.toMap
