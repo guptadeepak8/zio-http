@@ -5,7 +5,7 @@ object Dependencies {
   val NettyVersion                  = "4.1.109.Final"
   val NettyIncubatorVersion         = "0.0.25.Final"
   val ScalaCompactCollectionVersion = "2.12.0"
-  val ZioVersion                    = "2.1.1"
+  val ZioVersion                    = "2.1.4"
   val ZioCliVersion                 = "0.5.0"
   val ZioJsonVersion                = "0.6.2"
   val ZioSchemaVersion              = "1.2.0"
@@ -15,8 +15,8 @@ object Dependencies {
   val `jwt-core`                 = "com.github.jwt-scala"   %% "jwt-core"                % JwtCoreVersion
   val `scala-compact-collection` = "org.scala-lang.modules" %% "scala-collection-compat" % ScalaCompactCollectionVersion
 
-  val scalafmt = "org.scalameta" %% "scalafmt-dynamic" % "3.8.1"
-  val scalametaParsers = "org.scalameta" %% "parsers" % "4.9.4"
+  val scalafmt         = "org.scalameta" %% "scalafmt-dynamic" % "3.8.1"
+  val scalametaParsers = "org.scalameta" %% "parsers"          % "4.9.4"
 
   val netty =
     Seq(
